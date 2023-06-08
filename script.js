@@ -98,7 +98,7 @@ function setFoodText() {
         foodText.innerHTML = "<h1>STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!</h1>"
     }
     else if (hours >= 21 && hours <= 23) {
-        // foodText.classList.remove("foodText2")
+        foodText.classList.remove("foodText2")
         foodText.innerHTML = "<h1>close your eyes and go to sleep</h1>"
     }
     else if (hours >= 0 && hours <= 5) {
