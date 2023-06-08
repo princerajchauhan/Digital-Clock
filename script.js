@@ -90,15 +90,15 @@ function setFoodText() {
    
     if(hours >= 12 && hours <= 16){
         foodText.setAttribute("class", "foodText foodText2")
-        foodText.style.paddingLeft = "2.5vw"
+        // foodText.style.paddingLeft = "2.5vw"
         foodText.innerHTML = "<h1>good afternoon!! take some sleep</h1>"
     }
     else if (hours >= 17 && hours <= 20) {
-        // foodText.setAttribute("class", "foodText foodText2")
+        foodText.setAttribute("class", "foodText foodText2")
         foodText.innerHTML = "<h1>STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!</h1>"
     }
     else if (hours >= 21 && hours <= 23) {
-        foodText.classList.remove("foodText2")
+        // foodText.classList.remove("foodText2")
         foodText.innerHTML = "<h1>close your eyes and go to sleep</h1>"
     }
     else if (hours >= 0 && hours <= 5) {
