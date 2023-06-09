@@ -88,7 +88,10 @@ let foodText = document.getElementsByClassName("foodText")[0]
 function setFoodText() {
     let hours = new Date().getHours();
    
-    if(hours >= 12 && hours <= 16){
+    if (hours >= 6 && hours <= 11) {
+        foodText.innerHTML = "h1>grab some healthy breakfast!!!</h1>"
+    }
+    else if(hours >= 12 && hours <= 16){
         foodText.setAttribute("class", "foodText foodText2")
         // foodText.style.paddingLeft = "2.5vw"
         foodText.innerHTML = "<h1>good afternoon!! take some sleep</h1>"
