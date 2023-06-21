@@ -89,7 +89,7 @@ function setFoodText() {
     let hours = new Date().getHours();
    
     if (hours >= 6 && hours <= 11) {
-        foodText.innerHTML = "h1>grab some healthy breakfast!!!</h1>"
+        foodText.innerHTML = "<h1>grab some healthy breakfast!!!</h1>"
     }
     else if(hours >= 12 && hours <= 16){
         foodText.setAttribute("class", "foodText foodText2")
